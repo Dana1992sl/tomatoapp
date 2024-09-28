@@ -28,26 +28,28 @@ public class home extends javax.swing.JFrame {
 
         head = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        table1 = new javax.swing.JTable();
         jTabbedPane4 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        saladtab = new javax.swing.JPanel();
+        S1 = new javax.swing.JLabel();
+        S2 = new javax.swing.JLabel();
+        S3 = new javax.swing.JLabel();
+        S4 = new javax.swing.JLabel();
+        rollstab = new javax.swing.JPanel();
+        R1 = new javax.swing.JLabel();
+        R2 = new javax.swing.JLabel();
+        R3 = new javax.swing.JLabel();
+        R4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         head.setBackground(new java.awt.Color(153, 204, 255));
         head.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\logo.png")); // NOI18N
+        getContentPane().add(head, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 0, 746, 62));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        table1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -63,90 +65,94 @@ public class home extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable1.setGridColor(new java.awt.Color(204, 255, 204));
-        jScrollPane1.setViewportView(jTable1);
+        table1.setGridColor(new java.awt.Color(204, 255, 204));
+        jScrollPane1.setViewportView(table1);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_1.png")); // NOI18N
-        jLabel1.setText("jLabel1");
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 286, -1, 133));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_2.png")); // NOI18N
-        jLabel3.setText("jLabel3");
+        S1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_1.png")); // NOI18N
+        S1.setText("jLabel1");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_3.png")); // NOI18N
-        jLabel2.setText("jLabel2");
+        S2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_2.png")); // NOI18N
+        S2.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_4.png")); // NOI18N
-        jLabel4.setText("jLabel4");
+        S3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_3.png")); // NOI18N
+        S3.setText("jLabel2");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        S4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_4.png")); // NOI18N
+        S4.setText("jLabel4");
+
+        javax.swing.GroupLayout saladtabLayout = new javax.swing.GroupLayout(saladtab);
+        saladtab.setLayout(saladtabLayout);
+        saladtabLayout.setHorizontalGroup(
+            saladtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saladtabLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(S1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(S2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(S3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(S4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        saladtabLayout.setVerticalGroup(
+            saladtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saladtabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel1))
+                .addGroup(saladtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(S3)
+                    .addComponent(S4)
+                    .addComponent(S2)
+                    .addComponent(S1))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
 
-        jTabbedPane4.addTab("SALAD", jPanel1);
+        jTabbedPane4.addTab("SALAD", saladtab);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_5.png")); // NOI18N
-        jLabel5.setText("jLabel5");
+        R1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_5.png")); // NOI18N
+        R1.setText("jLabel5");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_6.png")); // NOI18N
-        jLabel6.setText("jLabel6");
+        R2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_6.png")); // NOI18N
+        R2.setText("jLabel6");
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_7.png")); // NOI18N
-        jLabel7.setText("jLabel7");
+        R3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_7.png")); // NOI18N
+        R3.setText("jLabel7");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_8.png")); // NOI18N
-        jLabel8.setText("jLabel8");
+        R4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\food_8.png")); // NOI18N
+        R4.setText("jLabel8");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout rollstabLayout = new javax.swing.GroupLayout(rollstab);
+        rollstab.setLayout(rollstabLayout);
+        rollstabLayout.setHorizontalGroup(
+            rollstabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(rollstabLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(R1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(R2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(R3, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(R4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(54, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        rollstabLayout.setVerticalGroup(
+            rollstabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(rollstabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel5))
+                .addGroup(rollstabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(R4)
+                    .addComponent(R3)
+                    .addComponent(R2)
+                    .addComponent(R1))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
 
-        jTabbedPane4.addTab("ROLLS", jPanel2);
+        jTabbedPane4.addTab("ROLLS", rollstab);
+
+        getContentPane().add(jTabbedPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 68, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Samantha\\Desktop\\netbeans project\\project3\\assets\\logout_icon.png")); // NOI18N
         jButton1.setText("LOGIN Page");
@@ -155,39 +161,7 @@ public class home extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(head, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTabbedPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 13, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(58, 58, 58))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(head, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addGap(0, 39, Short.MAX_VALUE))
-        );
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 380, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -235,20 +209,20 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel R1;
+    private javax.swing.JLabel R2;
+    private javax.swing.JLabel R3;
+    private javax.swing.JLabel R4;
+    private javax.swing.JLabel S1;
+    private javax.swing.JLabel S2;
+    private javax.swing.JLabel S3;
+    private javax.swing.JLabel S4;
     private javax.swing.JLabel head;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane4;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JPanel rollstab;
+    private javax.swing.JPanel saladtab;
+    private javax.swing.JTable table1;
     // End of variables declaration//GEN-END:variables
 }
